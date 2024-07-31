@@ -1,0 +1,528 @@
+{
+	"info": {
+		"_postman_id": "713d161e-4e23-43ba-8239-b4b85ab26d95",
+		"name": "Phase 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25101763"
+	},
+	"item": [
+		{
+			"name": "Admin actions",
+			"item": [
+				{
+					"name": "Admin_sign_up",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/admin_sign_up?email=bro5@mail&password=24ufaz",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"admin_sign_up"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "bro5@mail"
+								},
+								{
+									"key": "password",
+									"value": "24ufaz"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "admin_sign_in",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/admin_sign_in?email=bro5@mail&password=24ufaz",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"admin_sign_in"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "bro5@mail"
+								},
+								{
+									"key": "password",
+									"value": "24ufaz"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "admin_add_fist_time_discount",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/add_first_time_discount?admin_id=1&discount=22",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"add_first_time_discount"
+							],
+							"query": [
+								{
+									"key": "admin_id",
+									"value": "1"
+								},
+								{
+									"key": "discount",
+									"value": "22"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "admin_service_discount",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/add_service_discount?admin_id=1&service=Mobile&discount=20",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"add_service_discount"
+							],
+							"query": [
+								{
+									"key": "admin_id",
+									"value": "1"
+								},
+								{
+									"key": "service",
+									"value": "Mobile"
+								},
+								{
+									"key": "discount",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show_refund_requests",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/show_refund_requests?admin_id=1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"show_refund_requests"
+							],
+							"query": [
+								{
+									"key": "admin_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Accept refund",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/accept_order_refund?admin_id=1&order_placement=1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"accept_order_refund"
+							],
+							"query": [
+								{
+									"key": "admin_id",
+									"value": "1"
+								},
+								{
+									"key": "order_placement",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show_all_logs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/show_all_logs?admin_id=1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"show_all_logs"
+							],
+							"query": [
+								{
+									"key": "admin_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User actions",
+			"item": [
+				{
+					"name": "user_sign_up",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/user_sign_up?email=hello@mail&password=0000f",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user_sign_up"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "hello@mail"
+								},
+								{
+									"key": "password",
+									"value": "0000f"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user_sign_in",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/user_sign_in?email=hello@mail&password=0000f",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user_sign_in"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "hello@mail"
+								},
+								{
+									"key": "password",
+									"value": "0000f"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Donation_service",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/donation_service?user_id=1&provider=schools&payment_method=cash&fees=500",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"donation_service"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "1"
+								},
+								{
+									"key": "provider",
+									"value": "schools"
+								},
+								{
+									"key": "payment_method",
+									"value": "cash"
+								},
+								{
+									"key": "fees",
+									"value": "500"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mobile_service",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/mobile_service?user_id=1&provider=etisalat&number=01235678&payment_method=wallet&fees=80",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"mobile_service"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "1"
+								},
+								{
+									"key": "provider",
+									"value": "etisalat"
+								},
+								{
+									"key": "number",
+									"value": "01235678"
+								},
+								{
+									"key": "payment_method",
+									"value": "wallet"
+								},
+								{
+									"key": "fees",
+									"value": "80"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Landline_service",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/landline_service?user_id=1&payment_type=quarter&number=01235678&payment_method=cash&fees=500",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"landline_service"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "1"
+								},
+								{
+									"key": "payment_type",
+									"value": "quarter"
+								},
+								{
+									"key": "number",
+									"value": "01235678"
+								},
+								{
+									"key": "payment_method",
+									"value": "cash"
+								},
+								{
+									"key": "fees",
+									"value": "500"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Internet_service",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/internet_service?user_id=1&provider=vodafone&number=01235678&payment_method=cash&fees=500",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"internet_service"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "1"
+								},
+								{
+									"key": "provider",
+									"value": "vodafone"
+								},
+								{
+									"key": "number",
+									"value": "01235678"
+								},
+								{
+									"key": "payment_method",
+									"value": "cash"
+								},
+								{
+									"key": "fees",
+									"value": "500"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add_to_wallet",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/add_to_wallet?user_id=1&fees=87",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"add_to_wallet"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "1"
+								},
+								{
+									"key": "fees",
+									"value": "87"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Wallet_balance",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/wallet_balance?user_id=1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"wallet_balance"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show_orders_history",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/show_order_history?user_id=1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"show_order_history"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request_refund",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/refund_order?user_id=1&order_id=1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"refund_order"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "1"
+								},
+								{
+									"key": "order_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
