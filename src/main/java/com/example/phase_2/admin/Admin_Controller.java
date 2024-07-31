@@ -27,7 +27,11 @@ public class Admin_Controller {
 	public Admin_Controller() {
 		
 	}
-	
+
+	@GetMapping("/test_localhost")
+	public String testLocalHost() {
+		return "Localhost is working perfectly!";
+	}
 	@PostMapping("/admin_sign_in")
 	public String sign_in(@RequestParam String email , @RequestParam String password) {
 		

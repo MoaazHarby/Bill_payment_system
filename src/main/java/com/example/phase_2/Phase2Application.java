@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 public class Phase2Application {
 
+	// Booting up the embedded web server
 	public static void main(String[] args) {
 		SpringApplication.run(Phase2Application.class, args);
 	}
